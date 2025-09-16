@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Next.js: Dev",
+      "type": "pwa-node",
+      "request": "launch",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/node_modules/**/*.js"
+      ],
+      "serverReadyAction": {
+        "pattern": "started server on .+, url: (https?://.+)",
+        "uriFormat": "%s",
+        "action": "openExternally"
+      }
+    }
+  ]
+}

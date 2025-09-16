@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "vscode.typescript-language-features",
+        "vscode.react",
+        "vscode.vscode-typescript-next",
+        "pranaygp.vscode-css-peek",
+        "oderwat.indent-rainbow",
+        "chrisdias.promptboost","bradlc.vscode-tailwindcss",
+    ]
+}

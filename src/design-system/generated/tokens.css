@@ -1,0 +1,495 @@
+/* Auto-generated Windows 11 design tokens - DO NOT EDIT MANUALLY */
+/* Generated on 2025-09-16T17:10:05.252Z */
+
+/* Font Face Declarations */
+@font-face {
+  font-family: 'Segoe UI Variable Text';
+  src: local('Segoe UI Variable Text'), local('SegoeUIVariable-Text'), local('Segoe UI'), local('-apple-system'), local('BlinkMacSystemFont');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Segoe UI Variable Small';
+  src: local('Segoe UI Variable Small'), local('SegoeUIVariable-Small'), local('Segoe UI'), local('-apple-system'), local('BlinkMacSystemFont');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Segoe UI Variable Display';
+  src: local('Segoe UI Variable Display'), local('SegoeUIVariable-Display'), local('Segoe UI'), local('-apple-system'), local('BlinkMacSystemFont');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base Tokens */
+:root {
+  --typography-font-family-text: 'Segoe UI Variable Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --typography-font-family-small: 'Segoe UI Variable Small', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --typography-font-family-display: 'Segoe UI Variable Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --typography-font-family-mono: 'Cascadia Code', 'Consolas', 'Courier New', monospace;
+  --typography-font-size-caption: 12px;
+  --typography-font-size-body: 14px;
+  --typography-font-size-body-large: 18px;
+  --typography-font-size-subtitle: 20px;
+  --typography-font-size-title: 28px;
+  --typography-font-size-title-large: 40px;
+  --typography-font-size-display: 68px;
+  --typography-font-weight-regular: 400;
+  --typography-font-weight-semibold: 600;
+  --typography-line-height-caption: 16px;
+  --typography-line-height-body: 20px;
+  --typography-line-height-body-strong: 20px;
+  --typography-line-height-body-large: 24px;
+  --typography-line-height-body-large-strong: 24px;
+  --typography-line-height-subtitle: 28px;
+  --typography-line-height-title: 36px;
+  --typography-line-height-title-large: 52px;
+  --typography-line-height-display: 92px;
+  --typography-type-ramp-caption-font-size: 12px;
+  --typography-type-ramp-caption-line-height: 16px;
+  --typography-type-ramp-caption-font-weight: 400;
+  --typography-type-ramp-caption-font-family: small;
+  --typography-type-ramp-body-font-size: 14px;
+  --typography-type-ramp-body-line-height: 20px;
+  --typography-type-ramp-body-font-weight: 400;
+  --typography-type-ramp-body-font-family: text;
+  --typography-type-ramp-body-strong-font-size: 14px;
+  --typography-type-ramp-body-strong-line-height: 20px;
+  --typography-type-ramp-body-strong-font-weight: 600;
+  --typography-type-ramp-body-strong-font-family: text;
+  --typography-type-ramp-body-large-font-size: 18px;
+  --typography-type-ramp-body-large-line-height: 24px;
+  --typography-type-ramp-body-large-font-weight: 400;
+  --typography-type-ramp-body-large-font-family: text;
+  --typography-type-ramp-body-large-strong-font-size: 18px;
+  --typography-type-ramp-body-large-strong-line-height: 24px;
+  --typography-type-ramp-body-large-strong-font-weight: 600;
+  --typography-type-ramp-body-large-strong-font-family: text;
+  --typography-type-ramp-subtitle-font-size: 20px;
+  --typography-type-ramp-subtitle-line-height: 28px;
+  --typography-type-ramp-subtitle-font-weight: 600;
+  --typography-type-ramp-subtitle-font-family: display;
+  --typography-type-ramp-title-font-size: 28px;
+  --typography-type-ramp-title-line-height: 36px;
+  --typography-type-ramp-title-font-weight: 600;
+  --typography-type-ramp-title-font-family: display;
+  --typography-type-ramp-title-large-font-size: 40px;
+  --typography-type-ramp-title-large-line-height: 52px;
+  --typography-type-ramp-title-large-font-weight: 600;
+  --typography-type-ramp-title-large-font-family: display;
+  --typography-type-ramp-display-font-size: 68px;
+  --typography-type-ramp-display-line-height: 92px;
+  --typography-type-ramp-display-font-weight: 600;
+  --typography-type-ramp-display-font-family: display;
+  --motion-duration-fast: 83ms;
+  --motion-duration-normal: 167ms;
+  --motion-duration-slow: 333ms;
+  --motion-duration-slower: 500ms;
+  --motion-duration-slowest: 667ms;
+  --motion-easing-fast-invoke: cubic-bezier(0, 0, 0, 1);
+  --motion-easing-strong-invoke: cubic-bezier(0.13, 0.42, 0, 0.92);
+  --motion-easing-fast-dismiss: cubic-bezier(0, 0, 0, 1);
+  --motion-easing-soft-dismiss: cubic-bezier(1, 0, 1, 1);
+  --motion-easing-point-to-point: cubic-bezier(0.33, 0.15, 0, 1);
+  --motion-easing-linear: linear;
+  --motion-animation-fast-invoke-duration: 187ms;
+  --motion-animation-fast-invoke-easing: cubic-bezier(0, 0, 0, 1);
+  --motion-animation-fast-invoke-medium-duration: 333ms;
+  --motion-animation-fast-invoke-medium-easing: cubic-bezier(0, 0, 0, 1);
+  --motion-animation-fast-invoke-slow-duration: 500ms;
+  --motion-animation-fast-invoke-slow-easing: cubic-bezier(0, 0, 0, 1);
+  --motion-animation-strong-invoke-duration: 667ms;
+  --motion-animation-strong-invoke-easing: cubic-bezier(0.13, 0.42, 0, 0.92);
+  --motion-animation-fast-dismiss-duration: 167ms;
+  --motion-animation-fast-dismiss-easing: cubic-bezier(0, 0, 0, 1);
+  --motion-animation-fast-dismiss-medium-duration: 333ms;
+  --motion-animation-fast-dismiss-medium-easing: cubic-bezier(0, 0, 0, 1);
+  --motion-animation-fast-dismiss-slow-duration: 500ms;
+  --motion-animation-fast-dismiss-slow-easing: cubic-bezier(0, 0, 0, 1);
+  --motion-animation-soft-dismiss-duration: 167ms;
+  --motion-animation-soft-dismiss-easing: cubic-bezier(1, 0, 1, 1);
+  --motion-animation-point-to-point-duration: 167ms;
+  --motion-animation-point-to-point-easing: cubic-bezier(0.33, 0.15, 0, 1);
+  --motion-animation-point-to-point-medium-duration: 333ms;
+  --motion-animation-point-to-point-medium-easing: cubic-bezier(0.33, 0.15, 0, 1);
+  --motion-animation-point-to-point-slow-duration: 500ms;
+  --motion-animation-point-to-point-slow-easing: cubic-bezier(0.33, 0.15, 0, 1);
+  --motion-animation-fade-in-duration: 83ms;
+  --motion-animation-fade-in-easing: linear;
+  --motion-animation-fade-out-duration: 83ms;
+  --motion-animation-fade-out-easing: linear;
+  --spacing-base: 4px;
+  --spacing-scale-0: 0px;
+  --spacing-scale-1: 4px;
+  --spacing-scale-2: 8px;
+  --spacing-scale-3: 12px;
+  --spacing-scale-4: 16px;
+  --spacing-scale-5: 20px;
+  --spacing-scale-6: 24px;
+  --spacing-scale-8: 32px;
+  --spacing-scale-10: 40px;
+  --spacing-scale-12: 48px;
+  --spacing-scale-16: 64px;
+  --spacing-scale-20: 80px;
+  --spacing-scale-24: 96px;
+  --spacing-scale-32: 128px;
+  --spacing-scale-40: 160px;
+  --spacing-scale-48: 192px;
+  --radii-none: 0px;
+  --radii-small: 2px;
+  --radii-medium: 4px;
+  --radii-large: 7px;
+  --radii-xlarge: 12px;
+  --radii-circular: 999px;
+  --stroke-width-thin: 1px;
+  --stroke-width-thick: 2px;
+  --stroke-width-thicker: 4px;
+  --stroke-focus-width: 2px;
+}
+
+/* Theme Tokens */
+:root {
+  --colors-text-primary: #000000;
+  --colors-text-secondary: rgba(0, 0, 0, 0.61);
+  --colors-text-tertiary: rgba(0, 0, 0, 0.4458);
+  --colors-text-disabled: rgba(0, 0, 0, 0.3614);
+  --colors-text-on-accent-primary: #FFFFFF;
+  --colors-text-on-accent-secondary: rgba(255, 255, 255, 0.7);
+  --colors-text-on-accent-disabled: rgba(255, 255, 255, 0.5302);
+  --colors-fill-text-primary: #000000;
+  --colors-fill-text-secondary: rgba(0, 0, 0, 0.61);
+  --colors-fill-text-tertiary: rgba(0, 0, 0, 0.4458);
+  --colors-fill-text-disabled: rgba(0, 0, 0, 0.3614);
+  --colors-fill-accent-text-primary: #003E92;
+  --colors-fill-accent-text-secondary: #001A68;
+  --colors-fill-accent-text-tertiary: #005FB8;
+  --colors-fill-accent-text-disabled: rgba(0, 0, 0, 0.3614);
+  --colors-fill-control-default: rgba(255, 255, 255, 0.7);
+  --colors-fill-control-secondary: rgba(249, 249, 249, 0.5);
+  --colors-fill-control-tertiary: rgba(249, 249, 249, 0.3);
+  --colors-fill-control-disabled: rgba(249, 249, 249, 0.3);
+  --colors-fill-control-transparent: transparent;
+  --colors-fill-control-input-active: #FFFFFF;
+  --colors-fill-accent-default: #005FB8;
+  --colors-fill-accent-secondary: #005FB8;
+  --colors-fill-accent-tertiary: #005FB8;
+  --colors-fill-accent-disabled: rgba(0, 0, 0, 0.2169);
+  --colors-fill-system-critical: #C42B1C;
+  --colors-fill-system-success: #0F7B0F;
+  --colors-fill-system-attention: #005FB7;
+  --colors-fill-system-caution: #9D5D00;
+  --colors-fill-solid-background: #F3F3F3;
+  --colors-fill-solid-background-alt: #EBEBEB;
+  --colors-fill-solid-background-tertiary: #F9F9F9;
+  --colors-fill-solid-background-quarternary: #FFFFFF;
+  --colors-stroke-control-default: rgba(0, 0, 0, 0.0578);
+  --colors-stroke-control-secondary: rgba(0, 0, 0, 0.0241);
+  --colors-stroke-control-on-accent-default: rgba(255, 255, 255, 0.08);
+  --colors-stroke-control-on-accent-secondary: rgba(0, 0, 0, 0.14);
+  --colors-stroke-control-on-accent-tertiary: rgba(0, 0, 0, 0.2169);
+  --colors-stroke-control-on-accent-disabled: rgba(0, 0, 0, 0);
+  --colors-stroke-control-for-strong-fill-when-on-image: rgba(255, 255, 255, 0.35);
+  --colors-stroke-surface-default: rgba(117, 117, 117, 0.4);
+  --colors-stroke-surface-flyout: rgba(0, 0, 0, 0.0578);
+  --colors-stroke-surface-card: rgba(0, 0, 0, 0.0578);
+  --colors-stroke-divider-default: rgba(0, 0, 0, 0.08);
+  --colors-stroke-focus-outer: #000000;
+  --colors-stroke-focus-inner: #FFFFFF;
+  --colors-background-layer-default: #FFFFFF;
+  --colors-background-layer-alt: rgba(255, 255, 255, 0.5);
+  --colors-background-layer-flyout: #FFFFFF;
+  --colors-background-layer-card: #FFFFFF;
+  --colors-background-layer-card-alt: rgba(255, 255, 255, 0.8);
+  --colors-background-layer-acrylic-default: rgba(252, 252, 252, 0);
+  --colors-background-layer-acrylic-base: #F3F3F3;
+  --colors-background-layer-acrylic-card: rgba(255, 255, 255, 0.7);
+  --colors-background-layer-overlay: rgba(0, 0, 0, 0.3);
+  --colors-background-layer-content-background: #F9F9F9;
+  --colors-background-layer-app-surface: rgba(255, 255, 255, 0.5);
+  --colors-background-solid-base: #F3F3F3;
+  --colors-background-solid-secondary: #EEEEEE;
+  --colors-background-solid-tertiary: #F9F9F9;
+  --colors-background-solid-quarternary: #FFFFFF;
+  --elevation-low-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.06);
+  --elevation-medium-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.14);
+  --elevation-high-box-shadow: 0 16px 32px rgba(0, 0, 0, 0.14), 0 0 2px rgba(0, 0, 0, 0.14);
+  --elevation-flyout-box-shadow: 0 32px 64px rgba(0, 0, 0, 0.14), 0 2px 21px rgba(0, 0, 0, 0.14);
+  --elevation-dialog-box-shadow: 0px 32px 64px 0px rgba(0,0,0,0.28), 0px 2px 21px 0px rgba(0,0,0,0.22);
+  --elevation-card-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  --elevation-tooltip-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.14);
+}
+
+[data-theme="dark"] {
+  --colors-text-primary: rgba(255, 255, 255, 1.0);
+  --colors-text-secondary: rgba(255, 255, 255, 0.786);
+  --colors-text-tertiary: rgba(255, 255, 255, 0.544);
+  --colors-text-disabled: rgba(255, 255, 255, 0.363);
+  --colors-text-on-accent-primary: rgba(0, 0, 0, 1.0);
+  --colors-text-on-accent-secondary: rgba(0, 0, 0, 0.5);
+  --colors-text-on-accent-disabled: rgba(255, 255, 255, 0.544);
+  --colors-fill-text-primary: rgba(255, 255, 255, 1.0);
+  --colors-fill-text-secondary: rgba(255, 255, 255, 0.786);
+  --colors-fill-text-tertiary: rgba(255, 255, 255, 0.544);
+  --colors-fill-text-disabled: rgba(255, 255, 255, 0.363);
+  --colors-fill-accent-text-primary: #99EBFF;
+  --colors-fill-accent-text-secondary: #99EBFF;
+  --colors-fill-accent-text-tertiary: #60CDFF;
+  --colors-fill-accent-text-disabled: rgba(255, 255, 255, 0.363);
+  --colors-fill-control-default: rgba(255, 255, 255, 0.063);
+  --colors-fill-control-secondary: rgba(255, 255, 255, 0.083);
+  --colors-fill-control-tertiary: rgba(255, 255, 255, 0.031);
+  --colors-fill-control-disabled: rgba(255, 255, 255, 0.042);
+  --colors-fill-control-transparent: transparent;
+  --colors-fill-control-input-active: rgba(30, 30, 30, 0.7);
+  --colors-fill-accent-default: #60CDFF;
+  --colors-fill-accent-secondary: #60CDFF;
+  --colors-fill-accent-tertiary: #60CDFF;
+  --colors-fill-accent-disabled: rgba(255, 255, 255, 0.158);
+  --colors-fill-system-critical: #FF99A4;
+  --colors-fill-system-success: #6CCB5F;
+  --colors-fill-system-attention: #60CDFF;
+  --colors-fill-system-caution: #FCE100;
+  --colors-fill-solid-background: #202020;
+  --colors-fill-solid-background-alt: #1C1C1C;
+  --colors-fill-solid-background-tertiary: #282828;
+  --colors-fill-solid-background-quarternary: #2C2C2C;
+  --colors-stroke-control-default: rgba(255, 255, 255, 0.069);
+  --colors-stroke-control-secondary: rgba(255, 255, 255, 0.093);
+  --colors-stroke-control-on-accent-default: rgba(0, 0, 0, 0.094);
+  --colors-stroke-control-on-accent-secondary: rgba(0, 0, 0, 0.4);
+  --colors-stroke-control-on-accent-tertiary: rgba(0, 0, 0, 0.217);
+  --colors-stroke-control-on-accent-disabled: rgba(0, 0, 0, 0);
+  --colors-stroke-control-for-strong-fill-when-on-image: rgba(255, 255, 255, 0.545);
+  --colors-stroke-surface-default: rgba(117, 117, 117, 0.4);
+  --colors-stroke-surface-flyout: rgba(0, 0, 0, 0.2);
+  --colors-stroke-surface-card: rgba(0, 0, 0, 0.1);
+  --colors-stroke-divider-default: rgba(255, 255, 255, 0.083);
+  --colors-stroke-focus-outer: rgba(255, 255, 255, 1.0);
+  --colors-stroke-focus-inner: rgba(0, 0, 0, 0.7);
+  --colors-background-layer-default: rgba(58, 58, 58, 0.3);
+  --colors-background-layer-alt: rgba(255, 255, 255, 0.054);
+  --colors-background-layer-flyout: #2C2C2C;
+  --colors-background-layer-card: #1C1C1C;
+  --colors-background-layer-card-alt: #202020;
+  --colors-background-layer-acrylic-default: rgba(44, 44, 44, 0.96);
+  --colors-background-layer-acrylic-base: rgba(32, 32, 32, 0.96);
+  --colors-background-layer-acrylic-card: rgba(28, 28, 28, 0.85);
+  --colors-background-layer-overlay: rgba(0, 0, 0, 0.5);
+  --colors-background-solid-base: #202020;
+  --colors-background-solid-secondary: #1C1C1C;
+  --colors-background-solid-tertiary: #282828;
+  --colors-background-solid-quarternary: #2C2C2C;
+  --elevation-low-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.26), 0 0 2px rgba(0, 0, 0, 0.13);
+  --elevation-medium-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26), 0 0 2px rgba(0, 0, 0, 0.13);
+  --elevation-high-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37), 0 0 2px rgba(0, 0, 0, 0.13);
+  --elevation-flyout-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.26), 0 0 2px rgba(0, 0, 0, 0.13);
+  --elevation-dialog-box-shadow: 0 16px 32px rgba(0, 0, 0, 0.37), 0 0 2px rgba(0, 0, 0, 0.13);
+  --elevation-card-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
+  --elevation-tooltip-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26), 0 0 2px rgba(0, 0, 0, 0.13);
+}
+
+[data-theme="contrast"] {
+  --colors-text-primary: #FFFFFF;
+  --colors-text-secondary: #FFFFFF;
+  --colors-text-tertiary: #FFFFFF;
+  --colors-text-disabled: #3FF23F;
+  --colors-text-on-accent-primary: #000000;
+  --colors-text-on-accent-secondary: #000000;
+  --colors-text-on-accent-disabled: #000000;
+  --colors-fill-text-primary: #FFFFFF;
+  --colors-fill-text-secondary: #FFFFFF;
+  --colors-fill-text-tertiary: #FFFFFF;
+  --colors-fill-text-disabled: #3FF23F;
+  --colors-fill-accent-text-primary: #FFFF00;
+  --colors-fill-accent-text-secondary: #FFFF00;
+  --colors-fill-accent-text-tertiary: #FFFF00;
+  --colors-fill-accent-text-disabled: #3FF23F;
+  --colors-fill-control-default: #000000;
+  --colors-fill-control-secondary: #000000;
+  --colors-fill-control-tertiary: #000000;
+  --colors-fill-control-disabled: #000000;
+  --colors-fill-control-transparent: transparent;
+  --colors-fill-control-input-active: #000000;
+  --colors-fill-accent-default: #FFFF00;
+  --colors-fill-accent-secondary: #FFFF00;
+  --colors-fill-accent-tertiary: #FFFF00;
+  --colors-fill-accent-disabled: #3FF23F;
+  --colors-fill-system-critical: #FF0000;
+  --colors-fill-system-success: #00FF00;
+  --colors-fill-system-attention: #FFFF00;
+  --colors-fill-system-caution: #FF9900;
+  --colors-fill-solid-background: #000000;
+  --colors-fill-solid-background-alt: #000000;
+  --colors-fill-solid-background-tertiary: #000000;
+  --colors-fill-solid-background-quarternary: #000000;
+  --colors-stroke-control-default: #FFFFFF;
+  --colors-stroke-control-secondary: #FFFFFF;
+  --colors-stroke-control-on-accent-default: #000000;
+  --colors-stroke-control-on-accent-secondary: #000000;
+  --colors-stroke-control-on-accent-tertiary: #000000;
+  --colors-stroke-control-on-accent-disabled: #3FF23F;
+  --colors-stroke-control-for-strong-fill-when-on-image: #FFFFFF;
+  --colors-stroke-surface-default: #FFFFFF;
+  --colors-stroke-surface-flyout: #FFFFFF;
+  --colors-stroke-surface-card: #FFFFFF;
+  --colors-stroke-divider-default: #FFFFFF;
+  --colors-stroke-focus-outer: #FFFFFF;
+  --colors-stroke-focus-inner: #000000;
+  --colors-background-layer-default: #000000;
+  --colors-background-layer-alt: #000000;
+  --colors-background-layer-flyout: #000000;
+  --colors-background-layer-card: #000000;
+  --colors-background-layer-card-alt: #000000;
+  --colors-background-layer-acrylic-default: #000000;
+  --colors-background-layer-acrylic-base: #000000;
+  --colors-background-layer-acrylic-card: #000000;
+  --colors-background-layer-overlay: #000000;
+  --colors-background-solid-base: #000000;
+  --colors-background-solid-secondary: #000000;
+  --colors-background-solid-tertiary: #000000;
+  --colors-background-solid-quarternary: #000000;
+  --elevation-low-box-shadow: none;
+  --elevation-medium-box-shadow: none;
+  --elevation-high-box-shadow: none;
+  --elevation-flyout-box-shadow: none;
+  --elevation-dialog-box-shadow: none;
+  --elevation-card-box-shadow: none;
+  --elevation-tooltip-box-shadow: none;
+}
+
+/* Typography Utility Classes */
+
+.win-type-caption {
+  font-family: 'Segoe UI Variable Small', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.win-type-body {
+  font-family: 'Segoe UI Variable Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.win-type-body-strong {
+  font-family: 'Segoe UI Variable Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.win-type-body-large {
+  font-family: 'Segoe UI Variable Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.win-type-body-large-strong {
+  font-family: 'Segoe UI Variable Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.win-type-subtitle {
+  font-family: 'Segoe UI Variable Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.win-type-title {
+  font-family: 'Segoe UI Variable Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.win-type-title-large {
+  font-family: 'Segoe UI Variable Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 600;
+}
+
+.win-type-display {
+  font-family: 'Segoe UI Variable Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 68px;
+  line-height: 92px;
+  font-weight: 600;
+}
+
+/* Animation Utility Classes */
+
+.win-animate-fast-invoke {
+  animation-duration: 187ms;
+  animation-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
+.win-animate-fast-invoke-medium {
+  animation-duration: 333ms;
+  animation-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
+.win-animate-fast-invoke-slow {
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
+.win-animate-strong-invoke {
+  animation-duration: 667ms;
+  animation-timing-function: cubic-bezier(0.13, 0.42, 0, 0.92);
+}
+
+.win-animate-fast-dismiss {
+  animation-duration: 167ms;
+  animation-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
+.win-animate-fast-dismiss-medium {
+  animation-duration: 333ms;
+  animation-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
+.win-animate-fast-dismiss-slow {
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
+.win-animate-soft-dismiss {
+  animation-duration: 167ms;
+  animation-timing-function: cubic-bezier(1, 0, 1, 1);
+}
+
+.win-animate-point-to-point {
+  animation-duration: 167ms;
+  animation-timing-function: cubic-bezier(0.33, 0.15, 0, 1);
+}
+
+.win-animate-point-to-point-medium {
+  animation-duration: 333ms;
+  animation-timing-function: cubic-bezier(0.33, 0.15, 0, 1);
+}
+
+.win-animate-point-to-point-slow {
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.33, 0.15, 0, 1);
+}
+
+.win-animate-fade-in {
+  animation-duration: 83ms;
+  animation-timing-function: linear;
+}
+
+.win-animate-fade-out {
+  animation-duration: 83ms;
+  animation-timing-function: linear;
+}

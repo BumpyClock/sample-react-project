@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/adityasharma/Projects/windows-design-prototype-template/src/design-system/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
