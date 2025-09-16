@@ -7,12 +7,15 @@ First, run the development server:
 ```bash
 npm run dev
 # or
-yarn dev
-# or
 pnpm dev
 # or
 bun dev
 ```
+
+
+## Design tokens
+Design tokens are defined in `src/design-system`. Instruct your LLM agent to use these tokens for consistent styling across the application.
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
