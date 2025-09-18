@@ -1,3 +1,5 @@
+// ABOUTME: Design demo page showcasing design system tokens and components.
+// ABOUTME: Updated to use a black full-page background as requested.
 'use client';
 
 import React from 'react';
@@ -16,11 +18,12 @@ export default function DesignDemoPage() {
   }, [currentTheme]);
 
   return (
-    <div className="container mx-auto p-8">
-      <div className="flex justify-between items-center mb-8">
-        <h1 className="text-4xl font-bold">Windows 11 Design System Demo</h1>
-        <ThemeToggle />
-      </div>
+    <div className="min-h-screen w-full bg-black text-white">
+      <div className="container mx-auto p-8">
+        <div className="flex justify-between items-center mb-8">
+          <h1 className="text-4xl font-bold">Windows 11 Design System Demo</h1>
+          <ThemeToggle />
+        </div>
 
       <div className="space-y-8">
         {/* Current Theme Display */}
@@ -265,6 +268,7 @@ export default function DesignDemoPage() {
             </div>
           </CardContent>
         </Card>
+      </div>
       </div>
     </div>
   );
