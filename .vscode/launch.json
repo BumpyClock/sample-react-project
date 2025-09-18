@@ -4,19 +4,39 @@
     {
       "name": "Next.js: Dev",
       "type": "pwa-node",
-      "request": "launch",
-      "runtimeExecutable": "pnpm",
-      "runtimeArgs": ["run", "dev"],
+      "request": "attach",
+      "address": "localhost",
+      "port": 9229,
+      "restart": true,
       "cwd": "${workspaceFolder}",
-      "console": "integratedTerminal",
       "skipFiles": [
         "<node_internals>/**",
         "${workspaceFolder}/node_modules/**/*.js"
       ],
+      "preLaunchTask": "pnpm: dev",
       "serverReadyAction": {
         "pattern": "started server on .+, url: (https?://.+)",
         "uriFormat": "%s",
         "action": "openExternally"
+      }
+    },
+    {
+      "name": "Next.js: Dev (Edge)",
+      "type": "pwa-node",
+      "request": "attach",
+      "address": "localhost",
+      "port": 9229,
+      "restart": true,
+      "cwd": "${workspaceFolder}",
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/node_modules/**/*.js"
+      ],
+      "preLaunchTask": "pnpm: dev",
+      "serverReadyAction": {
+        "pattern": "started server on .+, url: (https?://.+)",
+        "uriFormat": "%s",
+        "action": "debugWithEdge"
       }
     }
   ]

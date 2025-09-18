@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "pnpm: dev",
+      "type": "shell",
+      "command": "pnpm",
+      "args": [
+        "run",
+        "dev"
+      ],
+      "isBackground": true,
+      "problemMatcher": [
+        {
+          "owner": "pnpm",
+          "pattern": [
+            {
+              "regexp": ".*",
+              "file": 0,
+              "message": 0
+            }
+          ],
+          "background": {
+            "activeOnStart": true,
+            "endsPattern": "started server on .+, url: (https?://.+)"
+          }
+        }
+      ],
+      "options": {
+        "env": {
+          "NODE_OPTIONS": "--inspect"
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    }
+  ]
+}
